@@ -42,3 +42,5 @@ public:
         }
         Node* temp = front;
         cout << front->
+    }
+}
