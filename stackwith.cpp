@@ -2,14 +2,14 @@
 using namespace std;
 class stack
 {
-int array[20];
+int arr[20];
 int top;
 int size;
-public;
+public:
 stack( int n)
 {
 top==-1;
-size=N;
+size=n;
 }
 void push(int n) {
         if (top == size - 1) {
@@ -17,7 +17,7 @@ void push(int n) {
         } 
      else {
             arr[++top] =  n;
-            cout << item << " pushed into the stack." << endl;
+            cout << n << " pushed into the stack:" << endl;
         }
     }
 void pop() {
@@ -44,7 +44,7 @@ int main()
 {
 int N;
 cin>>N;
- stack st(item);
+ stack st( N);
  st.push(10);
 st.push(20);
 st.push(10);
@@ -57,7 +57,5 @@ st.pop();
 st.push(60);
 cout<<"after deletion"<<endl;
 st.display();
-
-
 
 }
