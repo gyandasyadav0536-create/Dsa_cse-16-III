@@ -19,7 +19,7 @@ int smallestIndex(vector<int>& nums) {
 }
 
 int main() {
-    vector<int> nums1 = {0, 1, 2, 3};
+    vector<int> nums1 = {1,3,2};
     cout << smallestIndex(nums1) << endl;  
     return 0;
 }
