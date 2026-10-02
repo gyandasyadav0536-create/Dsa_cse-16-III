@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+using namespace std;
+struct Node {
+char data;
+Node*next;
+Node(char c): data(c),next(nullptr) {}
+
+
+Class Stack{
+private:
+Node*top;
+
+public:
+Stack():top(nullptr) {}
+void push(char c){
+Node*newNode=new Node(c);
+newNode->next=top;
+top=newNode;
+}
+void pop(){
+if(top!=nullptr)
+Node*temp=top;
+top=top->next;
+delete temp;
+}
+}
+void display(){
+if(top==nullptr){
+count<<"empty"<<endl;
+return;
+}
+string result;
+Node*curr=top;
+while(curr!=nullptr){
+result.push_back(curr->data);
+curr=curr->next;
+}
+for(int i=result.size()-1;i>=0;i--){
+cout<<result[i];
+}
+cout<<endl;
+}
+};
+int main(){
+stack editor;
+int q;
+cin>>q;
+while(q--){
+string op;
+cin>>op;
+if(op=="p"){
+char x;
+cin>>x;
+editor.push(x)
+}
+else if(op=="u"){
+editor.pop();
+}
+else if(op=="T"){
+editor.display(T);
+}
+return 0;
+}
+}
