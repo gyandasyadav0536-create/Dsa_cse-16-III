@@ -10,8 +10,8 @@ string interleaveStrings(const string& s1, const string& s2) {
     return result;
 }
 int main() {
-    string a = "ABC";
-    string b = "12345";
+    string a = "ABCD";
+    string b = "123456";
     cout << "Interleaved: " << interleaveStrings(a, b) << endl;
     return 0;
 }
