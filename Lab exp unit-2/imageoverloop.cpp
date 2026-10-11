@@ -9,4 +9,8 @@ int main() {
     cout << x << endl;
 
     return 0;
+<<<<<<< HEAD
+}   
+=======
 }
+>>>>>>> d91dd2b (2/10/26)
