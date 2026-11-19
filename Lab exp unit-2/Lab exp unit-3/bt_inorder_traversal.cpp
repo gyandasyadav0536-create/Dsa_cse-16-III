@@ -32,13 +32,6 @@ public:
 };
 
 int main() {
-    // Creating tree:
-    //      1
-    //       \
-    //        2
-    //       /
-    //      3
-
     TreeNode* root = new TreeNode(1);
     root->right = new TreeNode(2);
     root->right->left = new TreeNode(3);
