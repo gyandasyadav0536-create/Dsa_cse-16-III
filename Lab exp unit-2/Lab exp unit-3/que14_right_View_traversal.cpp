@@ -1,12 +1,10 @@
-#include <iostream>
-#include <queue>
+#include <bits/stdc++.h>
 using namespace std;
 
 struct Node {
     int data;
     Node *left, *right;
 };
-
 void rightView(Node* root) {
     if (root == NULL)
         return;
@@ -41,6 +39,5 @@ int main() {
 
     cout << "Right View: ";
     rightView(root);
-
     return 0;
 }
