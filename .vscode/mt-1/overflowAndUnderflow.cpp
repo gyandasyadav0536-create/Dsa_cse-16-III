@@ -25,10 +25,10 @@ void display() {
 }
 
 int main() {
+    push(10);
     push(30);
-    push(20);
     pop();
-    push(40);
+    push(50);
     display();
     return 0;
 }
